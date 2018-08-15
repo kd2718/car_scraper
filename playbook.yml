@@ -6,3 +6,8 @@
 
   - debug:
       msg: "System adf has uuid asdfasfd"
+
+  - name: "Update system"
+    become: yes
+    apt:
+      upgrade: yes

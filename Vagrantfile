@@ -10,6 +10,11 @@ Vagrant.configure("2") do |config|
   # For a complete reference, please see the online documentation at
   # https://docs.vagrantup.com.
 
+  config.vm.provider "virtualbox" do |v|
+    v.memory = 4086
+    v.cpus = 4
+  end
+
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "bento/ubuntu-18.04"
