@@ -1,5 +1,8 @@
 ---
 - hosts: all
-tasks:
+  tasks:
   - debug:
-    msg: "Hello vagrant!!"
+      msg: "Hello vagrant!! this is a test"
+
+  - debug:
+      msg: "System adf has uuid asdfasfd"
